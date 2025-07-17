@@ -1,0 +1,33 @@
+    /*
+     Types of selector
+     1.Simple
+     2.Attribute
+     3.Combinator
+     4.Pseudo
+     5.Element
+    */
+
+    /*---------------Simple Selector Start----------------------*/
+    /*1.Tag*/
+h1{
+    color: peru;
+    text-align: center;
+}
+
+   /*2.Class*/
+.head{
+    color: blue;
+}
+
+   /*3.Tag*/
+#Head3{
+    color: chartreuse;
+    text-align: left;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+   /*4.Universal*/
+*{
+    font-family: monospace;
+}
+    /*---------------Simple Selector End----------------------*/
+ 

@@ -1,0 +1,11 @@
+/* .head:hover{
+    background-color: aqua;
+} */
+/* 
+.head:active{
+    background-color: blue;
+} */
+
+a:visited {
+    color:rgb(207, 18, 81);
+}

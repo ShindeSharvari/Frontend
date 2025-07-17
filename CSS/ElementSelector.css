@@ -1,0 +1,21 @@
+/* p::after{
+    content:"Hii Im New String";
+    color: red;
+    font-size: 2rem;
+} */
+
+/* p::before{
+    content:"Hii Im New String";
+    color: red;
+    font-size: 2rem;
+} */
+
+/* p::first-letter{
+    color: red;
+    font-size: 2rem;
+} */
+
+p::first-line{
+    color: red;
+    font-size: 2rem;
+}

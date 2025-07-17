@@ -1,0 +1,32 @@
+/* Grouping selector */
+
+/* h1,p,a,i{
+    color: green;
+} */
+
+
+/* descendant selector */
+
+/* section div a{
+    color: red;
+} */
+
+
+/* child selector */
+
+/* section>div>[href=""]
+{
+    color: green;
+} */
+
+
+/* General sibling selector */
+/* section > div > span ~h5{
+    color: red;
+} */
+
+
+/* Adjacent sibling selector */
+section > div > span + h5{
+    color: rgb(145, 255, 0);
+}
