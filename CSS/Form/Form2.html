@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+             width: 100vw;
+             height: 100vh;
+             background:linear-gradient(#AB7FEE,#886AEC);
+             display: flex;
+             justify-content: center;
+             align-items: center;
+        }
+        main{
+            width:60vw;
+            height:70vh;
+            background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #section1
+        {
+            width:50%;
+            height:100%;
+            background-color: #03B2CF;
+            padding:40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #section2
+        {
+            width:50%;
+            height:100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input,textarea
+        {
+            width: 80%;
+            height:35px;
+            margin: 10px;
+            border: none;
+            padding: 10px;
+            background-color:#EEEEEE;
+        }
+        textarea{
+            height:70px;
+        }
+        button{
+            width: 80px;
+            height: 40px;
+            background-color: #03B2CF;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="section1">
+        <h1>Let's Chat</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum animi vitae, temporibus quaerat labore veritatis! <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, laudantium?</p>
+        </section>
+        <section id="section2">
+          <h1>CONTACT</h1>
+          <input type="text" placeholder="Name">
+          <input type="tel" placeholder="Phone">
+          <input type="email" placeholder="Email">
+          <textarea name="" id="" placeholder="Message"></textarea>
+          <button>Submit</button>
+        </section>
+    </main>
+</body>
+</html>
