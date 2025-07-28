@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+             width: 100vw;
+             height: 100vh;
+             background-color: #8368D2;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+        }
+        main{
+            width:60vw;
+            height:70vh;
+            background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            padding: 30px;
+        }
+        #section1
+        {
+            width:50%;
+            height:100%;
+            padding:40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #section2
+        {
+            width:50%;
+            height:100%;
+            display: flex;
+            flex-direction: column;
+            align-items:left;
+        }
+        h1{
+            margin: 10px;
+        }
+        input,textarea
+        {
+            width: 80%;
+            height:45px;
+            margin:5px;
+            border: none;
+            padding: 10px;
+            background-color:#EEEEEE;
+            border-radius: 20px;
+        }
+        textarea{
+            height:80px;
+        }
+        button{
+            margin: 15px;
+            width: 80%;
+            height: 40px;
+            background-color:#846BDD;
+            border-radius: 20px;
+            border: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="section1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhbFFibr7i3lY4aRgRQiTGcDZkdd6LnwntNw&s" alt="Email">
+        </section>
+        <section id="section2">
+          <h1>Get in touch</h1>
+          <input type="text" placeholder="&#128100;  Name">
+          <input type="email" placeholder="&#9993;  Email">
+          <textarea name="" id="" placeholder="Message"></textarea>
+          <button>Send</button>
+        </section>
+    </main>
+</body>
+</html>
