@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form8</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background: 
+            linear-gradient(to top right, #FF4584)top right no-repeat,
+            linear-gradient(to bottom left,#929CD9) bottom left no-repeat;
+        background-color: #fff;
+        background-size: 40% 50%;
+        background-repeat: no-repeat;
+      }
+      #section1,
+      #section2 {
+        background-color:white;
+        width: 30%;
+        height: 80vh;
+        box-shadow: 0px 0px 10px gray;
+      }
+      img {
+        width: 100%;
+        height: 100%; 
+      }
+      #section2,form
+      {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:left;
+      }
+      #section2
+      {
+        padding: 60px;
+      }
+      h4{
+        text-decoration:underline;
+        text-decoration-thickness: 3px;
+        text-decoration-color: red;
+        margin-bottom: 10px;
+      }
+      input,button{
+        height: 35px;
+        border-radius: 20px;
+        border: 0.5px solid gray;
+        margin-bottom: 10px;
+      }
+      button{
+        background-color: #FF4584;
+        color: white;
+      }
+      label,p{
+        color:#ACB7BB;
+        /* padding: 5px; */
+      }
+      #icons{
+        text-align: center;
+        padding: 20px;
+      }
+      i{
+        margin-top: 10px;
+        font-size: 15px;
+        padding: 7px;
+        color: white;
+        background-color: gray;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section id="section1">
+        <img
+          src="https://images.pexels.com/photos/920382/pexels-photo-920382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"alt=""/>
+      </section>
+      <section id="section2">
+        <form action="">
+          <h4>LOGIN</h4>
+          <label for="name">Username</label>
+          <input type="text" id="name" />
+          <label for="password">Password</label>
+          <input type="password" id="Password" />
+          <div style="display: flex; align-items: center; gap: 5px;">
+            <input type="checkbox" id="remember" style="margin: 0;" />
+            <label for="remember">Remember me</label>
+         </div>
+          <button>Sign In</button>
+          <p>Don't have an account ? <a href="" style="color: #FF4584;">Sign up</a></p>
+        </form>
+
+        <div id="icons">
+          <p>login with social media</p>
+          <p>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
