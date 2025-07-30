@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar4</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css" integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;;
+      }
+      body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to right, #65a7f8 0%, #65a7f8 60%,white 60%,white 100%);
+
+      }
+      nav{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        width: 90vw;
+        height: 8vh;
+        margin-top: 30px;
+        padding: 0px 60px;
+        background-color:#65a7f8;
+        border-radius: 8px;
+        border: 3px solid white;
+      }
+      .list{
+        display: flex;
+        width: 40%;
+        justify-content: space-around;
+      }
+      a{
+        text-decoration: none;
+        color: white;
+        font-size:small;
+      }
+      .logo{
+        color: white;
+        font-weight:400;
+        font-size:large;
+      }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">NavBar</div>
+        <div class="list">
+            <a href="">Home</a>
+            <a href="">Features</a>
+            <a href="">Services</a>
+            <a href="">Our Work</a>
+        </div>  
+    </nav>
+</body>
+</html>
