@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+/* Navbar Starts Here */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 15vh;
+    background-color:#F8F9FA;
+    padding:0px 20px 0px 20px ;
+}
+#logo
+{
+    width: 30%;
+    text-align: left;
+    font-size:20px;
+    font-weight: 100;
+    color: #272727;
+}
+#menus{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-icon
+{
+    width: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu:hover{
+    color: rgb(64, 64, 224);
+}
+
+/* Navbar Ends Here */
+
+
+
+/* Hero Section Starts Here */
+#hero-section
+{
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    background-color: rgb(237, 241, 243);
+}
+.hero-section-left,.hero-section-right
+{
+    width: 50%;
+}
+
+.hero-section-img{
+    width:100%;
+    height: 600px;
+} 
+
+.hero-section-left p{
+    padding: 70px 0px 60px 110px;
+    Font-Family:Lato, sans-serif;
+    Font-Size:70px;
+    Line-Height:normal;
+    Font-Weight:300;
+    Letter-Spacing:normal;
+}
+
+.hero-section-button{
+    margin-left: 110px;
+    width: 200px;
+    height:50px;
+    background-color:rgb(28, 31, 35) ;
+    color: #e5e7e9;
+    font-size: 16px;
+}
+/* Hero Section Ends Here */
+
+
+/* Service section starts here  */
+
+#services-section{
+    display: flex;
+    padding: 80px;
+}
+.services-section-div{
+   display: flex;
+   padding: 20px 15px;
+}
+
+.services-section-div i{
+    font-size: 25px;
+    color:#72AEC8;
+    padding: 0px 10px 10px 0px;
+}
+.services-section-div b{
+    color: #272727;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 500;
+}
+.services-section-div p{
+    padding: 5px 19px 5px 0px;
+    color: #AEAEAE;
+    font-size: 17px;
+    line-height:25px;
+}
+
+/* Service sectin ends here */
+
+
+/* Mobile  and Watches ,latest post Product Section Starts */
+#mobile-product-section,
+#watches-product-section,
+#latest-post-section
+{
+    padding: 0px 110px 100px 110px;
+}
+
+#mobile-product-section-head,
+#watches-product-section-head,
+#latest-post-section-head
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px 30px 10px;
+}
+
+#mobile-product-section-head h2,
+#watches-product-section-head h2,
+#latest-post-section-head h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#mobile-product-section-head a,
+#watches-product-section-head a,
+#latest-post-section-head a{
+    word-spacing: 5px;
+}
+
+#mobile-product-section-head a:hover,
+#watches-product-section-head a:hover,
+#latest-post-section-head a:hover{
+    text-decoration: none;
+}
+
+#mobile-product-section-body,
+#watches-product-section-body,
+#latest-post-section-body
+{
+    display: flex;
+    justify-content:space-between;
+}
+.mobile-product-section-box,
+.watches-product-section-box
+{
+    width: 23.5%;
+    display: flex;
+    flex-direction: column;
+}
+.latest-post-section-box
+{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+}
+.mobile-product-section-box-info,
+.watches-product-section-box-info{
+    display: flex;
+    justify-content: space-between;
+}
+.latest-post-section-box-info
+{
+    padding: 17px;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+.latest-post-section-box-info h4
+{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.latest-post-section-box-info a
+{
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+.mobile-product-section-box-info h4,b , 
+.watches-product-section-box-info h4,b
+{
+    padding: 20px 0px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.mobile-product-section-box-info b,
+.watches-product-section-box-info b{
+    color:rgb(66, 123, 150);
+}
+/* Mobile and Watches Product Section Ends */
+
+
+
+/* Banner Section Starts Here */
+#banner-section
+{
+    margin-bottom: 80px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    background-color: rgb(237, 241, 243);
+}
+.banner-section-left
+{
+    padding: 170px 0px 0px 240px;
+    width: 45%;
+}
+
+.banner-section-img{
+    width:100%;
+    height: 650px;
+} 
+
+.banner-section-left p{
+    Font-Size:70px;
+    Line-Height:normal;
+    Font-Weight:300;
+    Letter-Spacing:normal;
+    text-transform: uppercase;
+}
+.banner-section-left h2{
+    padding-bottom: 10px;
+    font-size: 28px;
+    font-weight: 400;
+}
+.banner-section-button{
+    margin-top: 50px;
+    width: 200px;
+    height:50px;
+    background-color:rgb(28, 31, 35) ;
+    color: #e5e7e9;
+    font-size: 16px;
+}
+/* Banner Section Ends Here */
+
+
+/* Feedback Section starts here */
+#feedback-section{
+    padding: 40px 220px 100px 220px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+#feedback-section h1{
+    color:#EDF1F3;
+    transform: rotate(180deg);
+    font-size: 90px;
+}
+#feedback-section h3{
+    color:rgb(114,174,200);
+    font-size: 16px;
+}
+/* Feedback section ends here */
+
+
+/* Subscribe section starts here */
+
+#subscribe-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+#subscribe-section-main-div
+{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 90%;
+    background-color:black;
+    line-height: 35px;
+    padding: 70px 0 70px 0px;
+}
+
+#subscribe-section-main-div div1
+{
+  width: 30%;
+}
+
+#subscribe-section-main-div h2{
+    color:#F8F9FA;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#subscribe-section-main-div input{
+    width:300px;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+}
+#subscribe-section-main-div button{
+    width:200px;
+    padding: 12px;
+    border: none;
+    background-color: rgb(114,174,200);
+    color: white;
+    font-size: 16px;
+}
+#subscribe-section-main-div button:hover{
+    background-color: transparent;
+}
+/* Subscribe section ends here */
+
+
+/* Shop on insta section starts here */
+
+#shop-insta-section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#shop-insta-section div
+{
+    width: 80%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+}
+#shop-insta-section h2{
+    padding: 30px;
+    font-size: 35px;
+    font-weight: 400;
+}
+.insta-Images{
+    width: 20%;
+    height: 270px;
+}
+/* Shop on insta section ends here */
+
+
+/* FooterSection starts here  */
+
+#footer-section {
+  padding: 110px;
+  display:flex;
+  gap: 40px;
+  background-color: #fff;
+  color: #222;
+}
+
+.footer-section-div,
+.footer-section-div-links {
+  padding:10px ;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+.footer-section-div-links{
+   width: 200px;
+}
+
+.footer-section-div p{
+    display:inline;
+    color: #AEAEAE;
+    font-size: 17px;
+    line-height:25px;
+}
+
+.footer-section-div1-icons{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.footer-section-div1-icons i {
+  font-size: 16px;
+  color: #cfcdcd;  
+}
+
+.footer-icons i:hover {
+  color: #007aff;
+}
+
+.footer-section-div-links h3,
+.footer-section-div h3 {
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.footer-section-div-links a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #555;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.footer-section-div-links a:hover {
+  color: #007aff;
+}
+
+.footer-section-div h4 {
+  margin: 5px 0;
+  font-weight: normal;
+  color: #444;
+}
+
+.footer-section-div .info{
+    color: black;
+}
+/* Footer section ends here  */
+
+
+/* copyright section starts here */
+#footer-section-copyright {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.footer-section-copyright-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 30%;
+  line-height: 30px;
+}
+
+.copyright-image {
+  width: 50px;
+  height: auto;
+}
+.footer-section-copyright-div p{
+    font-size: 17px;
+    color:#AEAEAE
+}
+.info {
+  font-weight: 500;
+  color: #333;
+}
+/* copyright section ends here */
