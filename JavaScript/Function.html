@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        console.log("Executing from Outer scope");
+        /// Function Types
+        // 1. name function
+        function name(){
+         console.log("Executing form the name function inside");
+        }
+        name()
+
+        // 2. anonomous function
+        let newFun = function(){
+            console.log("Executing from the anonomous function inside")
+        }
+        newFun()
+
+        // 3. arrow function 
+        arrowFun = () =>{
+            console.log("Executing from the arrow function inside")
+        }
+        arrowFun()
+ 
+
+        // return 
+        function name()
+        {
+            console.log("Before the return statment")
+            return 'Hi i am return from function name'
+            console.log("After the retrun statement")  // this will not execute becoz after return anything will not work as it ends there only
+        }
+        console.log(name())
+
+
+        // parameterized function
+        function user(userName,age)
+        {
+            console.log("Hii i am "+ userName+ " and my age is "+age)
+        }
+        user("Sharvari",24)
+        user("Shiv",20)
+    </script>
+</body>
+</html>
