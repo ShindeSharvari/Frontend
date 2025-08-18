@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <script>
+        let arr=[10,32,23,12,13,65,83,39,38,38]
+        console.log(arr)
+
+        // arr.push('hii')     // add last
+        // arr.pop()           // remove last
+        // arr.shift()         // remove first
+        // arr.unshift('hii')  // add first place
+
+        // console.log(arr.slice(5))     // gives including 5th index to end
+        // console.log(arr.splice(5))   // removes from 5 index
+        // console.log(arr.slice(5,7)) // gives from 5 to  6 index first include second exclude
+        // console.log(arr.splice(5,7))  // remove from 5 and count till 7 
+        // console.log(arr.reverse()) // reverse array
+        // console.log(arr.join())   // array to string convert
+        // console.log(arr.join(%))
+        // console.log(arr.flat())    // subarrays to one array
+        // console.log(arr.sort())
+        console.log(arr.sort((a,b) => (b-a)))
+        console.log(arr)
+    </script>
+</body>
+</html>
