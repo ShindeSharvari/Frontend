@@ -6,6 +6,13 @@
     <title>Events</title>
 </head>
 <body>
-    
+    <h1 id="heading">Welcome to Events Page</h1>
+    <button onclick="changeText()">Click Me</button>
+
+    <script>
+        function changeText() {
+            document.getElementById('heading').innerText = "You clicked the button!";
+        }
+    </script>
 </body>
 </html>
