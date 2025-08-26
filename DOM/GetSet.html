@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Examples</title>
+</head>
+<body>
+    <!-- 1. Display Name in Anchor -->
+    <h1>Sharvari Shinde</h1>
+    <a href=""></a>
+
+    <!-- 2. Convert Paragraph to Input Type -->
+    <p>Password</p>
+    <input>
+
+    <!-- 3. Copy Image Link from Anchor -->
+    <a href="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"></a>
+    <img src="" alt="" height="150px">
+
+    <!-- 4. Set Placeholder from Label -->
+    <label>Full Name</label>
+    <input type="text">
+
+    <!-- 5. Copy Button Text to Label -->
+    <button>Click Me</button>
+    <label></label>
+
+    <hr>
+
+    <!-- 6. Change Heading Text on Button Click -->
+    <h2 id="heading">Welcome</h2>
+    <button id="btn">Change Text</button>
+
+    <!-- 7. Change Image on Click -->
+    <img id="myImg" src="https://via.placeholder.com/150" width="150px" alt="image">
+    <button id="changeImg">Change Image</button>
+
+    <!-- 8. Copy Text from Paragraph to Input -->
+    <p id="para">Sharvari Sunil Shinde</p>
+    <input id="textInput" type="text" placeholder="Type here">
+    <button id="copyBtn">Copy</button>
+
+    <!-- 9. Toggle Button Text -->
+    <button id="toggleBtn">ON</button>
+
+    <!-- 10. Change Background Color -->
+    <button id="colorBtn">Change Background</button>
+
+    <script>
+        // --- Original 5 ---
+        let h1Tag = document.getElementsByTagName('h1')[0];
+        let aTag = document.getElementsByTagName('a')[0];
+
+        let pTag = document.getElementsByTagName('p')[0];
+        let inputTag = document.getElementsByTagName('input')[0];
+
+        let aTag2 = document.getElementsByTagName('a')[1];
+        let imgTag = document.getElementsByTagName('img')[0];
+
+        let labelTag = document.getElementsByTagName('label')[0];
+        let inputTag2 = document.getElementsByTagName('input')[1];
+
+        let buttonTag = document.getElementsByTagName('button')[0];
+        let labelTag2 = document.getElementsByTagName('label')[1];
+
+        aTag.innerText = h1Tag.innerText;
+        inputTag.type = pTag.innerText;
+        imgTag.src = aTag2.href;
+        inputTag2.placeholder = labelTag.innerText;
+        labelTag2.innerText = buttonTag.innerText;
+
+        // --- 6. Change Heading Text ---
+        let heading = document.getElementById('heading');
+        let btn = document.getElementById('btn');
+        btn.addEventListener('click', function() {
+            heading.innerText = "Hello Sharvari!";
+        });
+
+        // --- 7. Change Image on Click ---
+        document.getElementById('changeImg').onclick = function() {
+            document.getElementById('myImg').src = "https://images.unsplash.com/photo-1607746882042-944635dfe10e";
+        }
+
+        // --- 8. Copy Text from Paragraph to Input ---
+        document.getElementById('copyBtn').onclick = function() {
+            document.getElementById('textInput').value = document.getElementById('para').innerText;
+        }
+
+        // --- 9. Toggle Button Text ---
+        let toggleBtn = document.getElementById('toggleBtn');
+        toggleBtn.onclick = function() {
+            toggleBtn.innerText = (toggleBtn.innerText === "ON") ? "OFF" : "ON";
+        }
+
+        // --- 10. Change Background Color ---
+        document.getElementById('colorBtn').onclick = function() {
+            document.body.style.backgroundColor =
+                `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
+        }
+    </script>
+</body>
+</html>
