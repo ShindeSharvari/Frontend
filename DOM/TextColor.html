@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Style</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        textarea{
+            width: 600px;
+            height: 200px;
+            font-size: 30px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <textarea></textarea>
+    <div>
+        <button value="red" onclick="changeTextColor(value)">Red</button>
+        <button value="green" onclick="changeTextColor(value)">Green</button>
+        <button value="yellow" onclick="changeTextColor(value)">Yellow</button>
+        <button value="underline" onclick="changeTextDecoration(value)">Underline</button>
+        <button value="overline" onclick="changeTextDecoration(value)">Overline</button>
+        <button value="line-through" onclick="changeTextDecoration(value)">line-through</button>
+    </div>
+    <script>
+        function changeTextColor(colors)
+        {
+            let text = document.getElementsByTagName('textarea')[0]
+            text.style.color=colors
+        }
+
+        function changeTextDecoration(decorationValue)
+        {
+            let text = document.getElementsByTagName('textarea')[0]
+            text.style.textDecoration=decorationValue
+        }
+    </script>
+</body>
+</html>
