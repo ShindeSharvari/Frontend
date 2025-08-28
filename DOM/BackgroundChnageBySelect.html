@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Change</title>
+</head>
+<body>
+    <select onchange="bgcolor(value)">
+     <option selected disabled>------Select Background Color------</option>   
+     <option value="red">Red</option>
+     <option value="green">Green</option>
+     <option value="yellow">Yellow</option>
+     <option value="blue">Blue</option>
+     <option value="gray">Gray</option>
+    </select>
+
+    <script>
+        function bgcolor(color)
+        {
+            let bodyTag = document.getElementsByTagName('body')[0]
+            bodyTag.style.backgroundColor=color 
+        }
+    </script>
+</body>
+</html>
