@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Change</title>
+    <style>
+        button{
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+     <button onclick="bgcolor('red')">Red</button>
+     <button onclick="bgcolor('green')">Green</button>
+     <button onclick="bgcolor('yellow')">Yellow</button>
+     <button onclick="bgcolor('blue')">Blue</button>
+     <button onclick="bgcolor('gray')">Gray</button>
+    </div>
+
+    <script>
+        function bgcolor(color)
+        {
+            let bodyTag = document.getElementsByTagName('body')[0]
+            bodyTag.style.backgroundColor=color 
+        }
+    </script>
+</body>
+</html>
