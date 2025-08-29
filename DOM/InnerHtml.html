@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner HTML</title>
+</head>
+<body>
+    <button id="graybtn">Gray</button>
+    <button class="btn">Red</button>
+    <button class="btn">Green</button>
+    <button class="btn">Yellow</button>
+    <button class="btn">Blue</button>
+    
+    <div class="box">
+        <h2>Hii I am Javascript</h2>
+        <img src="" alt="">
+    </div>
+    <script>
+        // let btns=document.getElementsByClassName('btn')
+        // console.log(btns);
+
+        let btns=document.getElementById('graybtn')
+        console.log(btns);
+
+        let tag=document.querySelector('.box')
+        tag.innerHTML=`<a>Hiiii</a>`
+    </script>
+</body>
+</html>
