@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Events</title>
+</head>
+<body>
+  <form id="myForm">
+    <input type="text" id="nameInput" placeholder="Enter name">
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    let input = document.getElementById("nameInput");
+    let form = document.getElementById("myForm");
+
+    input.addEventListener("change", function () {
+      alert("Input changed: " + input.value);
+    });
+
+    input.addEventListener("focus", function () {
+      input.style.background = "lightyellow";
+    });
+
+    input.addEventListener("blur", function () {
+      input.style.background = "white";
+    });
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault(); // stop page reload
+      alert("Form submitted!");
+    });
+  </script>
+</body>
+</html>
