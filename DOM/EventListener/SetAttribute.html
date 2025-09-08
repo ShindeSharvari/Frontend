@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Attribue</title>
+</head>
+<body>
+    <button>Click Me</button>
+    <script>
+        let btn=document.querySelector('button')
+        btn.setAttribute('class','ABC')
+        //btn.id='xyz'
+        btn.setAttribute('id','PQR')
+        btn.removeAttribute('class')
+        let getId = btn.getAttribute('id')
+        console.log(getId)
+        
+    </script>
+</body>
+</html>
