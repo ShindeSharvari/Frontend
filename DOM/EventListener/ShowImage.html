@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Image</title>
+</head>
+<body>
+    
+    <input type="text" value="">
+    <button onclick="viewImages()">show Image</button>
+    <img width="100" src="" alt="">
+    <script>
+
+
+        function viewImages(){
+            let imgSrc = document.getElementsByTagName('input')[0]
+            let imgTag = document.getElementsByTagName('img')[0]
+            
+            imgTag.setAttribute('src',imgSrc.value)
+        }
+    </script>
+</body>
+</html>
