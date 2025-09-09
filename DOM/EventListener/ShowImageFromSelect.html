@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            margin: 20px;
+            height: 500px;
+            width: 600px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <select onchange="showAnimal(value)">
+        <option selected disabled>--------Select An Animal-----------</option>
+        <option value="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7pYf2jZZD9xxRFraJbdOxvyNVv_2VdK5JlGH4ogR4S70K9VFY1mmv06gTJ8K7VfsxIoMN7h24K70xspUbCe30WvcHPwRGyIrYUsV22jc">Lion</option>
+        <option value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdkq2VZ-FTcOSVYa1_malzrlJTavIfBdUg_QKzxoSVIITUNdIDL-VuO9dsYxWjGzzb_7J_y-TM2Ak2UNtFB9xIfA">Tiger</option>
+        <option value="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRU8oNiB1wtqFvE4mOiF_lWtiRjbE-JUheC-VmgleAqkmxbDVQEsZkQxOwwi6LMBtlqkCGCxiUGYSPmZAn9B9p224sY4xOvUxp11LAPoA">Camel</option>
+        <option value="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpflckqTzo_CVJxHUPahKCrnIL3d2DIJn1ThfaalZfK682pUAn3mFidzfZM_yuLhNwHlLHRd_UkAVb_KZQfj4pnA">Dog</option>
+        <option value="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/960px-Cat_November_2010-1a.jpg">Cat</option>
+        <option value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCbqb-IKa5nhXB4qfYj3RgKETej3WcutR4cA&s">Donkey</option>
+        <option value="https://images.stockcake.com/public/9/0/0/900ca585-62ce-44f5-8345-85faaa60a0b0_large/amused-monkey-face-stockcake.jpg">Monkey</option>
+        <option value="https://static.vecteezy.com/system/resources/previews/050/892/799/non_2x/cartoon-pig-with-big-eyes-and-a-smile-vector.jpg">Pig</option>
+    </select>
+    <img src="" alt="">
+
+    <script>
+        function showAnimal(path)
+        {
+           let imgTag=document.getElementsByTagName('img')[0]
+           imgTag.setAttribute('src',path)
+        }
+    </script>
+</body>
+</html>
