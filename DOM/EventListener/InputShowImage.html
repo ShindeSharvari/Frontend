@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Image</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter Name">
+    <input type="text" placeholder="Enter URL">
+    <button onclick="crtOptions()">Submit</button>
+
+    <select onchange="showImage(value)">
+        <option value="" disabled selected>-------Select Option--------</option>
+    </select>
+    <img src="" alt="">
+
+    <script>
+        let name = document.querySelector('input');
+        let url  = document.getElementsByTagName('input')[1];
+        let imgTag = document.querySelector('img');
+        imgTag.setAttribute('width','500px')
+
+        function showImage(value) {
+            imgTag.src = value;
+        }
+
+        function crtOptions() {
+            let selectTag = document.querySelector('select');
+            
+            // added new option
+            selectTag.innerHTML += `<option value="${url.value}">${name.value}</option>`
+        }
+    </script>
+</body>
+</html>
