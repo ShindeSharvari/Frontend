@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Change</title>
+</head>
+
+<body>
+    <button>Red</button>
+    <button>Yellow</button>
+    <button>Black</button>
+    <button>Green</button>
+    <button>Pink</button>
+    <button>Violet</button>
+    <button>Aqua</button>
+    <button>Brown</button>
+    <button>Blue</button>
+    <button>Coral</button>
+
+
+    <script>
+
+        // let body = document.querySelector('body')
+        // body.addEventListener('click',function(e)
+        // {
+        //      body.style.backgroundColor=e.target.innerText
+        // })
+
+        let allBtns= document.querySelectorAll('button')
+        let body=document.querySelector('body')
+        for(let i=0;i < allBtns.length ; i++)
+        {
+          allBtns[i].addEventListener('click',function(e)
+          {
+            body.style.backgroundColor=e.target.innerText
+          })
+        } 
+    </script>
+
+   
+</body>
+</html>
