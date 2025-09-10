@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Image</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter Name" id="name">
+    <input type="text" placeholder="Enter Url" id="url">
+    <button id="btn">Submit</button>
+
+    <select name="" id="">
+        <option value="" disabled selected>-------Select Option -------</option>
+    </select>
+    <img src="" alt="">
+
+    <script>
+        let name = document.querySelector('#name')
+        let url = document.querySelector('#url')
+        let img = document.querySelector('img')
+        let select = document.querySelector('select')
+        let btn = document.querySelector('#btn')
+
+        btn.addEventListener('click',function()
+        {
+             select.innerHTML += `<option value="${url.value}">${name.value}</option>`
+        })
+
+        select.addEventListener('change',function()
+        {
+          let imgUrl = this.value
+          //let imgUrl = e.target.value
+          img.setAttribute('src',imgUrl)
+        })
+
+    </script>
+</body>
+</html>
