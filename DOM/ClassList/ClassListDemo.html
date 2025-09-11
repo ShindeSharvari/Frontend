@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClassList Example</title>
+  <style>
+    .highlight { color: red; font-weight: bold; }
+    .hidden { display: none; }
+    .big { font-size: 40px; }
+    .small { font-size: 18px; }
+  </style>
+</head>
+<body>
+  <h1 id="title">Hello Sharvari 👋</h1>
+
+  <button id="addBtn">Add Class</button>
+  <button id="removeBtn">Remove Class</button>
+  <button id="toggleBtn">Toggle Class</button>
+  <button id="checkBtn">Check Class</button>
+  <button id="replaceBtn">Replace Class</button>
+
+  <script>
+    let title = document.getElementById("title");
+
+    // 1️⃣ Add class
+    document.getElementById("addBtn").addEventListener("click", function() {
+      title.classList.add("highlight");
+      console.log("Added:", title.classList.value);
+    });
+
+    // 2️⃣ Remove class
+    document.getElementById("removeBtn").addEventListener("click", function() {
+      title.classList.remove("highlight");
+      console.log("Removed:", title.classList.value);
+    });
+
+    // 3️⃣ Toggle class
+    document.getElementById("toggleBtn").addEventListener("click", function() {
+      title.classList.toggle("hidden");
+      console.log("Toggled (hidden):", title.classList.value);
+    });
+
+    // 4️⃣ Check if class exists
+    document.getElementById("checkBtn").addEventListener("click", function() {
+      if (title.classList.contains("highlight")) {
+        console.log("✅ Highlight class exists");
+      } else {
+        console.log("❌ Highlight class not found");
+      }
+    });
+
+    // 5️⃣ Replace class
+    document.getElementById("replaceBtn").addEventListener("click", function() {
+      title.classList.replace("big", "small"); // replace big with small
+      console.log("Replaced:", title.classList.value);
+    });
+  </script>
+</body>
+</html>
