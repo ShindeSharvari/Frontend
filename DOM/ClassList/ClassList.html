@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassList</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1 class="banana orange kiwi grapes apple">Heading 1</h1>
+    <button>Add Or Remove</button>
+
+    <script>
+        let h1Tag = document.querySelector('h1')
+        // let class_List = h1Tag.classList
+        // class_List.add('Komal')
+        // class_List.remove('kiwi')
+        // console.log(class_List[2]);
+
+        let btn = document.querySelector('button')
+        btn.addEventListener('click',function()
+        {
+           h1Tag.classList.toggle('hiii😎')
+        })
+    </script>
+</body>
+</html>
