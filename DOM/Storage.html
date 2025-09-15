@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage</title>
+</head>
+
+
+<body>
+    <script>
+        // -------- Types of Storage --------
+        // 1. Local Storage     -> Permanent (string)
+        // 2. Session Storage   -> Temporary (string)
+
+
+        let obj = {
+            fruitName: 'Banana',
+            color: 'Yellow',
+            quantity: 20
+        }
+        console.log(typeof obj)
+        console.log(typeof 'Omkar')
+
+
+        // JSON -> JavaScript Object Notation
+
+
+        // let obj2 = {
+        //     "fruitName": "Banana",
+        //     "color": "Yellow",
+        //     "quantity": 20
+        // }
+
+
+        let convertIntoStr = JSON.stringify(obj)
+        localStorage.setItem('fruit-obj', convertIntoStr) // -> Set Data
+        localStorage.setItem('fruit1', "Apple") // -> Set Data
+        localStorage.setItem('fruit2', "Kiwi") // -> Set Data
+
+
+        let getData = localStorage.getItem('fruit-obj') // -> Get Data
+        let convertIntoObj = JSON.parse(getData) // -> to convert into original form
+        console.log(convertIntoObj)
+
+
+        localStorage.removeItem('fruit1') // -> Remove Data
+        localStorage.removeItem('fruit2') // -> Remove Data
+        localStorage.removeItem('fruit-obj') // -> Remove Data
+
+
+        // sessionStorage.setItem('Name','techRel')
+    </script>
+</body>
+</html>
