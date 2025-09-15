@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+     <style>
+        * {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: "Orbitron", sans-serif;
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.mainBox {
+    /* border: 1px solid gray; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.clockBox {
+    display: flex;
+}
+
+
+.clockBox div {
+    height: 70px;
+    width: 100px;
+    /* border: 1px solid gray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+}
+
+
+.dot {
+    width: 20px !important;
+}
+
+
+.dot h1 {
+    margin-top: -10px;
+}
+
+
+.day {
+    margin: 0px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: gray;
+}
+
+
+.weekBox {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+.active{
+    color: red;
+    font-size: 1.5rem;
+}
+
+
+.nowDay{
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+}
+
+
+.dateBox {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #555;
+    letter-spacing: 2px;
+}
+
+     </style>   
+</head>  
+<body>
+    <section>
+        <div class="mainBox">
+            <div class="weekBox"></div>
+            <div class="dateBox"></div>
+            <div class="clockBox">
+                <div class="hr">
+                    <h1>00</h1>
+                </div>
+                <div class="dot">
+                    <h1>:</h1>
+                </div>
+                <div class="min">
+                    <h1>00</h1>
+                </div>
+                <div class="dot">
+                    <h1>:</h1>
+                </div>
+                <div class="sec">
+                    <h1>00</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./DigitalClock.js"></script>
+
+</body>
+</html>
