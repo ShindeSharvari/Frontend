@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Image</title>
+    <style>
+        body{
+            display: flex;
+            justify-content:space-around; 
+            align-items: center;      
+            height: 100vh;           
+            gap: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <input type="text" placeholder="Enter Name" id="name">
+        </div>
+        <div>
+            <input type="text" placeholder="Enter Url" id="url">
+        </div>
+        <div>
+            <button id="addBtn">Create Option</button>
+        </div>
+    </section>
+    <section>
+        <select>
+            <option value="" disabled selected>--------------Select Name --------------</option>
+        </select>
+    </section>
+    <section>
+        <img src="" alt="" width="400px">
+    </section>
+
+    <script>
+        let btn= document.querySelector("#addBtn")
+        let name= document.querySelector("#name")
+        let url= document.querySelector("#url")
+        let selectTag=document.querySelector('select')
+        let imgTag = document.querySelector('img')
+
+        btn.addEventListener('click',function(){
+            let obj ={
+                name:name.value,
+                url:url.value
+            }
+            let convert = JSON.stringify(obj)
+            localStorage.setItem('user',convert)
+            let getObj = localStorage.getItem('user')
+            let convertIntoObj = JSON.parse(getObj)
+
+            console.log(convertIntoObj.name);
+            console.log(convertIntoObj.url);
+
+            //add option directly
+            selectTag.innerHTML += `<option value="${convertIntoObj.url}">${convertIntoObj.name}</option>`
+        })
+        
+        //image changes to selected option
+        selectTag.addEventListener('change',function() {
+            imgTag.src = this.value 
+        })
+    </script>
+</body>
+</html>
