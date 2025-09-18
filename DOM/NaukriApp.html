@@ -1,0 +1,153 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naukri App</title>
+</head>
+<body>
+    
+    <script>
+        let naukriApp = {
+            register: {
+                fullName: "Sharvari Shinde",
+                emailId: "sharvari@example.com",
+                password: "Sharvari@123",
+                mobileNumber: 9876543210
+            },
+
+            login: {
+                emailLogin: {
+                    emailId: "sharvari@example.com",
+                    password: "Sharvari@123"
+                },
+                otpLogin: {
+                    mobileNumber: 9876543210,
+                    otp: "123456"
+                }
+            },
+
+            profile: {
+                profileSummary: "Passionate software developer with strong problem-solving skills and interest in full-stack development.",
+
+                keySkills: ["Java", "SQL", "HTML", "CSS", "JavaScript"],
+
+                itSkills: [
+                    { skill: "Java", version: "17", lastUsed: 2025, experience: "1 years" },
+                    { skill: "SQL", version: "MySQL 8", lastUsed: 2025, experience: "6 months" }
+                ],
+
+                employment: [
+                    {
+                        company: "Innomatics Research Lab",
+                        role: "Intern",
+                        duration: "Jan 2025 - Mar 2025",
+                        description: "Worked on MERN stack projects and web apps."
+                    }
+                ],
+
+                education: [
+                    { degree: "MCA", college: "IMCC, Kothrud", year: 2024 },
+                    { degree: "BSc Computer Science", college: "SGM ,Karad", year: 2021 }
+                ],
+
+                projects: [
+                    { name: "Quiz Application", description: "A web-based quiz game built using HTML, CSS, and JavaScript." },
+                    { name: "Healthcare Booking System", description: "A MERN stack project for booking doctor appointments." }
+                ],
+
+                accomplishments: [
+                    { name: "Jump Rope", year: 2015, position: "1st", level: "State Level" },
+                    { name: "School Exam Topper", year: 2016, position: "1st", level: "School Level" }
+                ],
+
+                languages: [
+                    { language: "English", proficiency: "Fluent" },
+                    { language: "Marathi", proficiency: "Fluent" },
+                    { language: "Hindi", proficiency: "Fluent" }
+                ],
+
+                resume: "sharvari_resume.pdf"
+            },
+
+            careerPreference: {
+                jobType: "Full-Time",
+                preferredLocations: ["Pune", "Mumbai", "Bangalore"],
+                expectedSalary: "6 LPA",
+                noticePeriod: "Immediate"
+            },
+
+            tabs: {
+                home: {
+                    recommendations: [
+                        {
+                            company: "TCS",
+                            role: "Software Engineer",
+                            location: "Pune",
+                            salary: "6-8 LPA",
+                            experience: "0-2 years"
+                        },
+                        {
+                            company: "Infosys",
+                            role: "Java Developer",
+                            location: "Bangalore",
+                            salary: "5-7 LPA",
+                            experience: "0-1 year"
+                        }
+                    ],
+                    trendingJobs: ["Full Stack Developer", "Data Analyst", "QA Engineer"]
+                },
+
+                apply: {
+                    appliedJobs: [
+                        {
+                            company: "Capgemini",
+                            role: "Frontend Developer",
+                            status: "Under Review",
+                            appliedDate: "2025-09-15"
+                        },
+                        {
+                            company: "Wipro",
+                            role: "Software Tester",
+                            status: "Shortlisted",
+                            appliedDate: "2025-09-10"
+                        }
+                    ]
+                },
+
+                invites: {
+                    recruiterInvites: [
+                        {
+                            recruiter: "HR - Accenture",
+                            role: "Backend Developer",
+                            message: "We found your profile suitable for our job opening.",
+                            date: "2025-09-12"
+                        },
+                        {
+                            recruiter: "HR - Cognizant",
+                            role: "Full Stack Intern",
+                            message: "Looking for MCA freshers with good Java skills.",
+                            date: "2025-09-14"
+                        }
+                    ]
+                },
+
+                naukri360: {
+                    resumeScore: 85,
+                    suggestions: [
+                        "Add more keywords to your resume",
+                        "Update your latest project details",
+                        "Highlight internship achievements"
+                    ],
+                    learningResources: [
+                        { course: "Java Full Stack Development", platform: "Udemy" },
+                        { course: "SQL for Beginners", platform: "Coursera" }
+                    ]
+                }
+            }
+        }
+
+        console.log(naukriApp);
+    </script>
+</body>
+</html>
