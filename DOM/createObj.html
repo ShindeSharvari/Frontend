@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Object</title>
+    <style>
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      section{
+        padding: 20px;
+        border: 1px solid black;
+      }
+      div{
+        padding: 5px;
+      }
+      input,textarea{
+        padding: 10px;
+      }
+      button{
+        color: blue;
+        
+      }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <input type="text" placeholder="Enter Name" id="name">
+        </div>
+        <div>
+            <input type="text" placeholder="Enter Url" id="url">
+        </div>
+        <div>
+            <input type="number" placeholder="Enter Phone Number" id="phone">
+        </div>
+        <div>
+            <input type="checkbox" id="pan">
+            <label for="pan">Pan Card</label>
+        </div>
+        <div>
+            <input type="checkbox" id="aadhar">
+            <label for="aadhar">Aadhar Card</label>
+        </div>
+        <div>
+            <label for="">Address</label><br>
+            <input type="text" placeholder="Enter City" id="city">
+            <input type="number" placeholder="Enter PinCode" id="pinCode">
+            <input type="text" placeholder="Enter Area" id="area">
+        </div>
+        <div>
+           <textarea name="" id="hobbies" placeholder="Enter Hobbies"></textarea>
+        </div>
+        <div>
+            <button id="addBtn">Submit</button>
+        </div>
+    </section>
+
+    <script>
+        let addBtn = document.querySelector("#addBtn")
+        let name = document.querySelector("#name")
+        let url = document.querySelector("#url")
+        let phone = document.querySelector("#phone")
+        let hobbies = document.querySelector("#hobbies")
+        let pan = document.querySelector("#pan")
+        let aadhar = document.querySelector("#aadhar")
+        let city = document.querySelector("#city")
+        let pinCode = document.querySelector("#pinCode")
+        let area = document.querySelector("#area")
+        let userList =[]
+
+        addBtn.addEventListener('click' ,function()
+        {
+        let hobbiesList = hobbies.value.split(',')
+           let userObj ={
+            userName: name.value,
+            userUrl: url.value,
+            userPhone: phone.value,
+            userHobbies:hobbiesList,
+            userPan: pan.checked,
+            userAadhar: aadhar.checked,
+            userAddress:{
+               city: city.value,
+               pin: pinCode.value,
+               area: area.value
+               
+            }
+           }
+           userList.push(userObj)
+           console.log(userList);
+        })
+        
+    </script>
+</body>
+</html>
