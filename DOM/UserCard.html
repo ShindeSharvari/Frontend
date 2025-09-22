@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Card</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #card{
+            width: 350px;
+            height: 420px;
+            border:1px solid black;
+            border-radius: 30px;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #df93c7, #66a6ff); 
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2); 
+        }
+
+        #cardImg{
+            width: 160px;
+            height: 160px;
+        }
+
+        #cardImg img{
+            height:100%;
+            width: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+
+        }
+
+        #cardInfo p{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <table border=1 cellspacing="0px" cellpadding="10px">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>View</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>          
+        </table>
+    </section>
+    <section>
+        <div id="card">
+            <div id="cardImg">
+                <img id="userImage" alt="">
+            </div>
+            <div id="cardInfo">
+                <p id="userName">Name</p>
+                <p id="userRole">Role</p>
+                <p id="userMobile">Mobile</p>
+                <p id="userEmail">Email</p>
+                <p id="userAge">Age</p>
+                <p id="userCity">City</p>
+                <p id="userHobbies">Hobbies</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+         let users =[
+            {
+              image:"https://images.unsplash.com/photo-1494790108377-be9c29b29330?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" ,
+              name:"Sharvari",
+              role:"Frontend Developer",
+              mobile:7020548653,
+              email:"shindesharvari003@gmail.com",
+              age:24,
+              city:"Karad",
+              hobbies:["Travelling","Drawing","Coding"]
+            },
+            {
+              image:"https://img.freepik.com/free-photo/front-view-business-woman-suit_23-2148603018.jpg?semt=ais_incoming&w=740&q=80",
+              name:"Sakshi",
+              role:"Frontend Developer",
+              mobile:9876543210,
+              email:"sakshi123@gmail.com",
+              age:23,
+              city:"Pune",
+              hobbies:["Travelling","Reading","Dancing"]
+            },
+            {
+              image:"https://img.freepik.com/free-photo/closeup-young-female-professional-making-eye-contact-against-colored-background_662251-651.jpg",
+              name:"Rakhi",
+              role:"Backend Developer",
+              mobile:9123456780,
+              email:"rakhi_dev@gmail.com",
+              age:24,
+              city:"Mumbai",
+              hobbies:["Cooking","Gaming","Music"]
+            },
+            {
+              image:"https://t3.ftcdn.net/jpg/06/11/89/50/360_F_611895025_3sEm547mzOF1IKMBAVa4fJ7Ifq4z8Eye.jpg",
+              name:"Shravan",
+              role:"Full Stack Developer",
+              mobile:9988776655,
+              email:"shravan.kumar@gmail.com",
+              age:26,
+              city:"Bangalore",
+              hobbies:["Cricket","Coding","Movies"]
+            },
+            {
+              image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2DJ5u-uIOZWqkOK6UcuNH8eUf99S_tQbHVffyzxwPkf_QPv2WoMKvT6lgnGSbsr6iWuM&usqp=CAU",
+              name:"Manish",
+              role:"UI/UX Designer",
+              mobile:9090909090,
+              email:"manish.designs@gmail.com",
+              age:25,
+              city:"Delhi",
+              hobbies:["Photography","Travelling","Sketching"]
+            }]
+        //for tbody
+        for(let i=0;i<users.length;i++)
+        {
+            document.querySelector("tbody").innerHTML += `   
+            <tr>
+                <td>${users[i].name}</td>
+                <td>${users[i].email}</td>
+                <td>${users[i].role}</td>
+                <td><button onclick='profile(${[i]})'>View Profile</button></td>
+            </tr>  `
+        }
+        function profile(ind){
+            document.getElementById("userImage").src = users[ind].image;
+            document.getElementById("userName").innerHTML = "<b>Name: </b>" + users[ind].name;
+            document.getElementById("userRole").innerHTML = "<b>Role: </b>" + users[ind].role;
+            document.getElementById("userMobile").innerHTML = "<b>Mobile: </b>" + users[ind].mobile;
+            document.getElementById("userEmail").innerHTML = "<b>Email: </b>" + users[ind].email;
+            document.getElementById("userAge").innerHTML = "<b>Age: </b>" + users[ind].age;
+            document.getElementById("userCity").innerHTML = "<b>City: </b>" + users[ind].city;
+            document.getElementById("userHobbies").innerHTML = "<b>Hobbies: </b>" + users[ind].hobbies.join(", ");
+        }
+
+        
+
+
+
+    </script>
+</body>
+</html>
