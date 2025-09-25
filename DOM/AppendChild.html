@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppendChild</title>
+</head>
+<body>
+    <div id='box'>
+
+    </div>
+
+    <script>
+        let parent = document.querySelector('#box')
+
+        let h1Tag = document.createElement('h1')
+        h1Tag.innerText='Hiiiiii 😆'
+        h1Tag.setAttribute('value','abc')
+        console.log(h1Tag)
+
+        parent.appendChild(h1Tag)
+        let imgTag = document.createElement('img')
+        console.log(imgTag)
+
+    </script>
+</body>
+</html>
