@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target</title>
+</head>
+<body>
+    <button id="btn">Click Me </button>
+    <!-- <a href=""></a> -->
+
+    <script>
+        let btn = document.querySelector('#btn')
+        btn.addEventListener('click',function(){
+            // window.open('https://www.facebook.com/','_blank')
+            //  window.open('https://www.facebook.com/','_self')
+            //  window.open('https://www.facebook.com/','_top')
+            //  window.open('https://www.facebook.com/','_parent')
+              window.open('https://www.facebook.com/','_blank','width=500 ,height=300,top=50,left=200')
+        })
+    </script>
+</body>
+</html>
