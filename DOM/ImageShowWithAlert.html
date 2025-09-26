@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Show With Alert</title>
+    <style>
+          body{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+          }
+
+          select{
+            width: 200px;
+          }
+    </style>
+</head>
+<body>
+    <div>
+         <input type="text" placeholder="Enter Path" id="path" value="">
+         <input type="text" placeholder="Enter True/False" id="boolean" value="">
+         <button>Click Me</button>   
+
+         <select name="" id="">
+            <option value="" selected disabled>------Select Url------</option>
+         </select>
+    </div>
+    <div>
+          <img src="" alt="" width="300px" height="300px">
+    </div>
+    
+    <script>
+        let pathTag = document.getElementById('path')
+        let booleanValue = document.getElementById('boolean')
+        let btn = document.querySelector('button')
+        let imgTag = document.querySelector('img')
+        let selectTag = document.querySelector('select')
+        
+
+         btn.addEventListener('click', function()
+         {
+            let bool = booleanValue.value.toLowerCase() 
+            if(bool === "true")
+            {
+                selectTag.innerHTML += `<option value="${pathTag.value}">${pathTag.value}</option>`
+            }
+            else
+            {
+                alert("False input can't be added")   
+            }
+         })
+
+         selectTag.addEventListener('change',function()
+         {
+            imgTag.src=this.value
+         })
+    </script>
+</body>
+</html>
