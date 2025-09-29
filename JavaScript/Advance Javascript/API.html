@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+    <table border="1" cellpadding="10px" cellspacing="0px">
+        <tr>
+            <th>ID</th>
+            <th>User Name</th>
+            <th>User Password</th>
+        </tr>
+    </table>
+    <script>
+        let table = document.querySelector('table')
+        fetch('https://fakerestapi.azurewebsites.net/api/v1/users')
+        .then(result => result.json())
+        .then(result =>
+            {
+                console.log(result)
+                for(let i=0;i<result.length;i++)
+                {
+                   table.innerHTML += `
+                   <tr>
+                      <td>${result[i].id}</td>
+                      <td>${result[i].userName}</td>
+                      <td>${result[i].password}</td>
+                   </tr> 
+                   `
+                }
+                
+            }
+        )
+    </script>
+</body>
+</html>
