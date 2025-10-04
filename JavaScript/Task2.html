@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table</title>
+</head>
+<body>
+    <button id="addBtn">Add</button>
+    <section>
+        <table border="1" cellspacing="0" cellpadding="5px" id="productTable">
+            <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Amount</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h3 id="totalAmt">Total: 0</h3>
+    </section>
+
+    <script>
+        let addNewBtn = document.querySelector('#addBtn');
+        let tbody = document.querySelector('#productTable tbody');
+        let totalAmt = document.querySelector('#totalAmt');
+
+        function updateTotal() {
+            let total = 0;
+            document.querySelectorAll('.amount').forEach(input => {
+                total += Number(input.value);
+            });
+            totalAmt.textContent = "Total: " + total;
+        }
+
+        addNewBtn.addEventListener('click', function () {
+            let newRow = document.createElement('tr');
+            newRow.innerHTML = `
+                <td><input type="text" class="name"></td>
+                <td><input type="number" class="price"></td>
+                <td><input type="number" class="qty"></td>
+                <td><input type="text" class="amount" readonly></td>
+                <td><button class="delBtn">X</button></td>
+            `;
+            tbody.appendChild(newRow);
+
+            let priceInput = newRow.querySelector('.price');
+            let qtyInput = newRow.querySelector('.qty');
+            let amtInput = newRow.querySelector('.amount');
+            let delBtn = newRow.querySelector('.delBtn');
+
+            function calculateAmount() {
+                let price =priceInput.value
+                let qty = qtyInput.value
+                amtInput.value = price * qty;
+                updateTotal();
+            }
+
+            priceInput.addEventListener('input', calculateAmount);
+            qtyInput.addEventListener('input', calculateAmount);
+
+            delBtn.addEventListener('click', function () {
+                newRow.remove();
+                updateTotal();
+            });
+        });
+    </script>
+</body>
+</html>
