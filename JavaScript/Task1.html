@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+<body>
+    <h1>Welcome To JavaScript</h1>
+    <button>Change</button>
+
+    <script>
+        let h1Tag = document.querySelector('h1')
+        let btn = document.querySelector('button')
+
+        btn.addEventListener('click',function(){
+            h1Tag.innerHTML="Good Morning"
+        })
+    </script>
+</body>
+</html>
