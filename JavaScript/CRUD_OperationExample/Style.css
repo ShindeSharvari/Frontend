@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: math;
+}
+
+
+section .mainBox {
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+
+.createBox,
+.updateBox {
+    width: 80%;
+}
+
+
+.inputBox {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+
+input,
+button {
+    padding: 5px;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+
+h3 {
+    text-align: center;
+}
+
+
+table {
+    width: 90%;
+}
+
+
+.resultBox {
+    display: flex;
+    justify-content: center;
+}
+
+
+table,
+tr,
+th,
+td {
+    border: 1px solid gray;
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+
+.actionBtn {
+    width: 25%;
+}
+
+
+.actionRow {
+    text-align: center;
+}
