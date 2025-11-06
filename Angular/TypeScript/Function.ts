@@ -26,4 +26,5 @@ let user: userObj ={
     city:"pune"
 }
 
+
 console.log(user);
